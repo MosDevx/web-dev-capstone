@@ -4,13 +4,13 @@
 
 @layer components {
   .hamburger {
-    @apply w-16 h-16;
+    @apply w-6 h-6;
   }
 }
 
 @layer utilities {
   .hamburger_bar {
-    @apply transition-transform duration-300 origin-center stroke-black stroke-[10px];
+    @apply transition-transform duration-300 origin-center stroke-black stroke-[4px];
   }
 
   .hamburger_bar-top {
