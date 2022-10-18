@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components { 
+	
+	.hamburger{
+		@apply w-16 h-16
+	}
+
+}
+
+@layer utilities{
+	.hamburger_bar{
+		@apply transition-transform duration-300 origin-center stroke-black stroke-[10px]
+	}
+
+	.hamburger_bar-top{
+		@apply -translate-y-[40%];
+	}
+	.hamburger_bar-bot{
+		@apply translate-y-[40%];
+	}
+
+	.is-opened .hamburger_bar-top{
+		@apply rotate-45 translate-y-0
+	}	
+
+	.is-opened .hamburger_bar-mid{
+		@apply scale-x-0 
+	}
+
+	.is-opened .hamburger_bar-bot{
+		@apply -rotate-45 translate-y-0
+	}
+}

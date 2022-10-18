@@ -24,8 +24,8 @@ To get a local copy up and running follow these simple example steps.
  - Git
 
 ### Setup
-	Clone this repository
-	git clone https://github.com/MosDevx/web-dev-capstone.git
+	Clone this repository by running: 
+	`git clone https://github.com/MosDevx/web-dev-capstone.git`
 
 ### Install
 	Open Html file in preferred browser
