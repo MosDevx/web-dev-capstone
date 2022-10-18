@@ -3,9 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: lato, system-ui, sans-serif;
+    color:
+  }
+}
+
 @layer components {
   .hamburger {
-    @apply w-6 h-6;
+    /* @apply w-6 h-6; */
   }
 }
 
