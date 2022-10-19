@@ -428,6 +428,15 @@ html {
 .hamburger {
     /* @apply w-6 h-6; */
   }
+.visible {
+  visibility: visible;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -473,6 +482,12 @@ html {
 }
 .mt-3 {
   margin-top: 0.75rem;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -632,6 +647,10 @@ html {
 .capitalize {
   text-transform: capitalize;
 }
+.text-primary-black {
+  --tw-text-opacity: 1;
+  color: rgb(39 42 49 / var(--tw-text-opacity));
+}
 .text-primary-orange {
   --tw-text-opacity: 1;
   color: rgb(236 82 66 / var(--tw-text-opacity));
@@ -639,10 +658,6 @@ html {
 .text-primary-grey {
   --tw-text-opacity: 1;
   color: rgb(83 83 83 / var(--tw-text-opacity));
-}
-.text-primary-black {
-  --tw-text-opacity: 1;
-  color: rgb(39 42 49 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
