@@ -20,15 +20,39 @@
 	<body class="text-primary-black bg-primary-light-grey">
  
 		<!-- Start Header section -->
-		 <header>
-			<nav class="flex p-2">
-				<button id="hamburger-button" class="w-8 h-8 slef-start md:hidden" >
+		 <header class="md:grid md:grid-rows-2 bg-yellow-300">
+		
+			<!-- div shows only for desktop: has SM links and logout -->
+			<div class="hidden md:flex bg-slate-400 md:h-8 flex-row justify-end">
+					<div class="mr-56 flex flex-row items-center justify-between bg-red-400 w-72 text-base font-bold">
+						<i class="fa-brands fa-facebook text-lg"></i>
+						<i class="fa-brands fa-twitter text-lg"></i>
+						<a href="">English</a>
+						<a href="">My Page</a>
+						<a href="">Logout</a>
+					</div>
+			</div>
+
+			<nav class="flex p-2 md:grid md:grid-cols-12 place-items-center ">
+				
+				
+				<button id="hamburger-button" class="w-8 h-8 self-start md:hidden" >
 					<svg class="w-8 h-8 hamburger">
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-top" />
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-mid" />
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-bot" />
 					</svg>
-				</button>	
+				</button>
+				
+				<!-- hold log -->
+				<div class="hidden md:grid md:col-start-1 md:col-span-4 bg-blue-400 ">
+						<p class="">Bd Logo Here</p>
+				</div>
+
+				<div class="hidden md:grid col-start-5 w-full text-center col-span-8 bg-blue-400">
+							hey
+				</div>
+				
 			</nav>
 		</header> 
 		<!-- End header section -->
