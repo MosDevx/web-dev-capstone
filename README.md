@@ -56,7 +56,10 @@ Give a ⭐️ if you like this project!
 ### Design:
  ["CC Global Summit 2015"](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07) is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
+### Images:
+ Image by [David Mark](https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=83519) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=83519)
 
+ Image by [Grégory ROOSE](https://pixabay.com/users/gregroose-2823595/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3288119) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3288119")
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.

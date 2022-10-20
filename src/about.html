@@ -10,13 +10,117 @@
 		<title></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="">
-	</head>
-	<body>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
+		<link rel="stylesheet" href="/dist/style.css">
 		
-		<script src="" async defer></script>
+		<script src="https://kit.fontawesome.com/dad56601c0.js" crossorigin="anonymous"></script>
+		<script src="./Js/about.js" async></script>
+	</head>
+	<body class="">
+ 
+		<!-- Start Header section -->
+		 <header class="md:grid md:grid-rows-2 md:h-fit ">
+		
+			<!-- div shows only for desktop: has SM links and logout -->
+			<div class="hidden md:grid md:grid-cols-12 bg-slate-700  md:h-8">
+					<div class="flex col-start-9 col-span-3 justify-between w-full items-center  text-white  text-base font-bold">
+						<a href=""><i class="fa-brands fa-facebook  text-lg"></i></a>
+						<a href=""><i class="fa-brands  fa-twitter text-lg"></i></a>
+						<a href="">English</a>
+						<a href="">My Page</a>
+						<a href="">Logout</a>
+					</div>
+			</div>
+
+			<nav class="flex p-2 md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center align-middle ">
+				
+				
+				<button id="hamburger-button" class="w-8 h-8 self-start md:hidden" >
+					<svg class="w-8 h-8 hamburger">
+						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-top" />
+						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-mid" />
+						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-bot" />
+					</svg>
+				</button>
+				
+				<!-- holder logo -->
+				<div class="hidden md:grid md:pb-2 md:col-start-1 md:col-span-3 ">
+						<a href="" class="p-1">Logo Goes Here</a>
+				</div>
+
+				<div class="hidden md:flex justify-between col-start-5 w-full text-center col-span-7 pr-1  font-bold">
+							<a href="./homepage.html" class="hover:text-primary-orange p-1">Home</a>
+							<a href=""class="hover:text-primary-orange p-1">Program</a>
+							<a href=""class="hover:text-primary-orange p-1">Join</a>
+							<a href=""class="hover:text-primary-orange p-1">Sponsor</a>
+							<a href=""class="hover:text-primary-orange p-1">News</a>
+							<a href="" class="text-primary-orange ring p-1 ring-primary-orange">CC Campaign</a>
+				</div>
+				
+			</nav>
+		</header> 
+		<!-- End header section -->
+
+		<!-- Start Intro section -->
+		 <section id="intro-section" class="container h-[600px]  flex flex-col justify-center p-3 mx-auto mb-5 text-center">
+			
+				<p class=" text-xl font-semibold text-primary-orange font-display">Hello All Creatives</p>
+				<h1 class="mt-2 text-4xl md:text-5xl text-primary-orange uppercase font-display font-bold"> 2022 Annual Writers Meetup </h1>
+				
+					<div class="p-1 my-4 text-justify max-w-[800px] mx-auto border-4 border-slate-200 bg-slate-50">
+					<p class=" mx-auto  font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cumque officiis. Provident porro, facere quia quibusdam corrupti dolores unde voluptatem minima veniam praesentium sit magni animi ut molestiae repellendus dolorem.</p>
+				</div>
+
+					<p class="m-3 w-2/3  mx-auto ">Please contact us via email for any further questions  about Writer's Meetup 2022</p>
+					<a  class="underline underline-offset-2  font-semibold" href="mailto:xyz@abc.com">writersMeetup@gmail.com</a>
+				
+			</section> 
+			<!-- End Intro Section -->
+
+			<!-- Logo Details section -->
+			<section class="container mx-auto bg-white h-[450px] text-center flex flex-col">
+					<h2 class="font-semibold text-2xl md:text-3xl capitalize">Writers Meetup <br/> 2022 Logo</h2>
+					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg mt-3"> </div>
+					<p class="font-body m-3  ">The logo for the 2022 writers conference was decided by through the logo competition held from 8.June to 7.July  </p>
+
+					<div>
+						<img src="/Assets/Images/main-logo.jpg" width="" alt="" class="w-[200px] mx-auto aspect-square "/>
+					</div>
+
+			</section>
+			<!-- End logo details section -->
+
+			<!-- Start past events section -->
+			<section class="container mx-auto bg-white h-fit text-center pt-2 mb-10 flex flex-col">
+				<h2 class="font-semibold text-2xl md:text-3xl capitalize ">See the past Writers Meetup</h2>
+				<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg mt-3"> </div>
+				<p class="font-body m-3  ">Take a look at the last two Writers Meetups that  took place in Accra and Cairo.</p>
+
+				<div class="flex flex-col md:flex-row justify-evenly md:w-[1000px] mb-10 mx-auto ">
+					
+					<div class="relative w-screen md:w-[460px] h-fit mb-4 " >
+						<img width="" height="" class="w-screen md:w-[460px]  aspect-auto z-10 bg-blend-overlay" src="/Assets/Images/group1.jpg" alt="Meetup Image"/>
+						<div class="absolute flex flex-col w-full h-full bottom-0 inset-x-0 bg-red-300 opacity-60 hover:opacity-0 text-center justify-center text-slate-900 font-bold text-4xl font-display"> 2020 </div>
+					</div>		
+					
+					<div class="relative w-screen md:w-[460px]  h-fit " >
+						<img width="" height="" class=" w-screen md:w-[460px] aspect-auto z-10 bg-blend-overlay" src="/Assets/Images/group2.jpg" alt="Meetup Image"/>
+						<div class="absolute flex flex-col w-full h-full bottom-0 inset-x-0 bg-red-300 opacity-60 hover:opacity-0 text-center justify-center text-slate-900 font-bold text-4xl font-display"> 2021 </div>
+					</div>
+					
+	
+
+			</section>
+			<!-- end past events section -->
+
+			<!-- Start of footer section -->
+				<footer class=" w-screen mx-auto h-20 sm:h-24 lg:h-28 text-white bg-slate-700 ">
+						<div class=" flex flex-row justify-evenly h-full  m-auto items-center sm:max-w-2xl ">
+								<p class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent font-bold font-display text-lg md:text-2xl bg-clip-text">ByDesign</p>	
+							
+								<p class="font-bold md:text-xl">2022 ByDesign Software</p>
+						</div>
+					</footer>
+		<!-- Start of footer section -->
+
 	</body>
 </html>
