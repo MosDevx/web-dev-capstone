@@ -8,7 +8,7 @@
 ## Built With
 
 - Html
-- Css
+- TailwindCss
 - Js
 - ❤️
 
