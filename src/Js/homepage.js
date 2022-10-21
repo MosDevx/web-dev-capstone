@@ -1,4 +1,4 @@
-const src = '../../Assets/Data/speaker-data.json';
+const src = '../Assets/Data/speaker-data.json';
 
 function isMobileDevice() {
   if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
