@@ -838,6 +838,18 @@ body{
 .bg-\[conic-gradient\(at_right\2c _var\(--tw-gradient-stops\)\)\]{
   background-image: conic-gradient(at right, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\.\.\/Assets\/Images\/micro-carbon\.png\'\)\]{
+  background-image: url('../Assets/Images/micro-carbon.png');
+}
+.bg-\[url\(\'\.\.\/Assets\/Images\/bg-foggy-birds\.png\'\)\]{
+  background-image: url('../Assets/Images/bg-foggy-birds.png');
+}
+.bg-\[url\(\'\.\.\/Assets\/Images\/pattern1\.png\'\)\]{
+  background-image: url('../Assets/Images/pattern1.png');
+}
+.bg-\[url\(\'\.\.\/Assets\/Images\/denim\.webp\'\)\]{
+  background-image: url('../Assets/Images/denim.webp');
+}
 .from-rose-300{
   --tw-gradient-from: #fda4af;
   --tw-gradient-to: rgb(253 164 175 / 0);
