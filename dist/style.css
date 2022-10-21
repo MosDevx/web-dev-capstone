@@ -754,6 +754,9 @@ body{
 .rounded-lg{
   border-radius: 0.5rem;
 }
+.rounded-sm{
+  border-radius: 0.125rem;
+}
 .border-4{
   border-width: 4px;
 }
