@@ -34,7 +34,7 @@
 			<nav class="flex p-2 md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center bg-white shadow-md align-middle ">
 				
 				
-				<button id="hamburger-button" class="w-8 h-8 self-start md:hidden" >
+				<button id="hamburger-button" class="w-8 h-8 z-10 self-start md:hidden" >
 					<svg class="w-8 h-8 hamburger">
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-top" />
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-mid" />
@@ -57,7 +57,22 @@
 				</div>
 				
 			</nav>
+
+			<nav id="mobile-nav" class="w-full -left-full top-0 pl-16 bg-[url('/Assets/Images/micro-carbon.png')]  flex flex-col justify-evenly text-left  text-3xl font-semibold rounded-md absolute h-[500px] ">
+			
+					<a href="./about.html" class="hover:text-primary-orange p-1 bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">About</a>
+					<a href=""class="hover:text-primary-orange p-1 bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">Program</a>
+					<a href=""class="hover:text-primary-orange p-1 bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">Join</a>
+					<a href=""class="hover:text-primary-orange p-1 bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">Sponsor</a>
+					<a href=""class="hover:text-primary-orange p-1 bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">News</a>
+					<!-- <a href="" class="text-primary-orange ring p-1 ring-primary-orange">CC Campaign</a> -->
+	
+
+			</nav>
+
 		</header>  
+
+
 		<!-- End header section -->
 
 		<!-- Start Intro section -->
@@ -85,33 +100,40 @@
 				</div>
 
 				<!-- container for main program list items -->
-				<div class="flex flex-col mx-auto gap-y-4 gap-x-2 sm:max-w-[562px] md:max-w-[780px] lg:max-w-full   md:grid md:grid-cols-3  md:grid-rows-2 lg:flex lg:flex-row">
-
+				<div class="flex flex-col mx-auto gap-y-4 gap-x-2 sm:max-w-[562px] md:max-w-[780px] lg:max-w-full   md:grid md:grid-cols-3  md:grid-rows-2 lg:flex  lg:flex-row">
+				
 					<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-monument text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-xl font-display col-start-2 col-span-2 ">Lecture</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Listen to speakers from various countries about the messages of sharing and opening</p>	
-						</div>					
+						<i class="fa-solid fa-handshake text-4xl col-start-1 col-span-1"></i>
+						<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Connect</p>
+						<p class="col-start-4 col-span-4 md:px-4" >Find and link up with new writers across the globe.Make new friends and future bitter rivals</p>	
+						</div>	
+
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-monument text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-xl font-display col-start-2 col-span-2 ">Lecture</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Listen to speakers from various countries about the messages of sharing and opening</p>	
-						</div>					
+							<i class="fa-solid fa-champagne-glasses text-4xl col-start-1 col-span-1"></i>
+							<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Party Hard</p>
+							<p class="col-start-4 col-span-4 md:px-4" >Get your creative juices flowing by over indulging in your favorite beverages</p>	
+							</div>	
+			
+				
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-monument text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-xl font-display col-start-2 col-span-2 ">Lecture</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Listen to speakers from various countries about the messages of sharing and opening</p>	
+						<i class="fa-solid fa-dumpster-fire text-4xl col-start-1 col-span-1"></i>
+						<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Trash Talk</p>
+						<p class="col-start-4 col-span-4 md:px-4" >Practice the art of writing believable dialogue by starting belligerent arguments and overly loud fights</p>	
 						</div>					
+						
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-monument text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-xl font-display col-start-2 col-span-2 ">Lecture</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Listen to speakers from various countries about the messages of sharing and opening</p>	
-						</div>					
+							<i class="fa-solid fa-user-secret text-4xl col-start-1 col-span-1"></i>
+							<p class="text-primary-orange font-bold  text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Learn to Spy</p>
+							<p class="col-start-4 col-span-4 md:px-4" >Discover how to write realistic characters by using juicy details you've gotten from snooping on your loved ones</p>	
+							</div>	
+							
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-monument text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-xl font-display col-start-2 col-span-2 ">Lecture</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Listen to speakers from various countries about the messages of sharing and opening</p>	
+						<i class="fa-solid fa-fire text-4xl col-start-1 col-span-1"></i>
+						<p class="text-primary-orange font-bold text-lg text-center md:text-xl font-display col-start-2 col-span-2 ">Commit Arson</p>
+						<p class="col-start-4 col-span-4 md:px-4" >Spark the flame of creativity by actually starting fires and torching down public property</p>	
 						</div>
+						
+				
 					
 						
 				</div>
@@ -121,7 +143,7 @@
 			<!-- End Main Program section -->
 
 			<!-- start section Featured Speaker -->
-			<section class="">
+			<section class="flex flex-col items-center mb-6 ">
 				<div class="flex flex-col my-8  ">
 					<h2 class="text-center font-display font-bold text-2xl capitalize">Featured Speakers </h2>
 					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg  mt-3 "> </div>
@@ -130,10 +152,11 @@
 				<!-- container for list of speakers -->
 				
 				<div id="speaker-list-display" class=" place-items-center py-4 px-2 lg:px-4 grid gap-y-4 md:grid-cols-2 md:grid-rows-3 md:gap-y-5 mx-auto max-w-6xl ">	
-
-
 				</div>
-
+				
+				<button id="show-speakers-button" data-state="fresh" class="md:hidden my-4 flex place-items-center text-xl justify-evenly font-display text-center mx-auto  w-2/3 text-primary-orange font-semibold border-2 border-primary-orange hover:bg-primary-orange hover:text-white rounded-md h-12">
+					Show More  <i class="fa-solid fa-caret-down"></i>
+				</button>
 			</section>
 			<!-- End section featured Speakers -->
 
@@ -162,9 +185,9 @@
 			<!-- Start of footer section -->
 			<footer class=" w-screen mx-auto h-20 sm:h-24 lg:h-28 text-white mt-1  bg-white ">
 				<div class=" flex flex-row justify-evenly h-full  m-auto items-center sm:max-w-2xl ">
-						<p class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent font-bold font-display text-lg md:text-3xl bg-clip-text">ByDesign</p>	
+						<p class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent font-bold font-display text-xl sm:text-2xl md:text-3xl bg-clip-text">ByDesign</p>	
 					
-						<p class="font-bold md:text-xl text-slate-900">2022 ByDesign Software</p>
+						<p class="font-bold sm:text-lg md:text-xl text-slate-900">2022 ByDesign Software</p>
 				</div>
 			</footer>
 		<!-- Start of footer section -->

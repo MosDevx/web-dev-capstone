@@ -1,9 +1,27 @@
 const src = '../../Assets/Data/speaker-data.json';
 
+function isMobileDevice() {
+  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // true for mobile device
+    return true;
+  }
+  // false for not mobile device
+  return false;
+}
+
 // Animate hamburger menu open and close
+const mobileNav = document.getElementById('mobile-nav');
 const hamburger = document.getElementById('hamburger-button');
+
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('is-opened');
+
+  // show mobile menu
+  if (hamburger.classList.contains('is-opened')) {
+    mobileNav.classList.remove('-left-full');
+  } else {
+    mobileNav.classList.add('-left-full');
+  }
 });
 
 // let speakerList = [];
@@ -12,7 +30,7 @@ async function getSpeakerList() {
   const response = await fetch(src);
   let speakerList = [];
   if (!response.ok) {
-    console.error(response.status, response.statusText);
+    // console.error(response.status, response.statusText);
   } else {
     const data = await response.json();
     const { speakers } = data;
@@ -21,15 +39,13 @@ async function getSpeakerList() {
   return speakerList;
 }
 
-
-
 const speakersContainer = document.getElementById('speaker-list-display');
 
 const fragment = document.createDocumentFragment();
 
 async function generateSpeakers() {
   const speakerList = await getSpeakerList();
-  
+
   speakerList.forEach((speaker) => {
     const mainDiv = document.createElement('div');
     mainDiv.classList.add('grid', 'grid-cols-4', 'place-items-center', 'max-w-lg');
@@ -53,7 +69,7 @@ async function generateSpeakers() {
     innerDiv.appendChild(positionDescription);
 
     const divider = document.createElement('div');
-    divider.classList.add('bg-primary-grey','w-6','flex','justify-center','self-start','h-[2px]','rounded-lg', 'my-3');
+    divider.classList.add('bg-primary-grey', 'w-6', 'flex', 'justify-center', 'self-start', 'h-[2px]', 'rounded-lg', 'my-3');
     innerDiv.appendChild(divider);
 
     const writeupParagraph = document.createElement('p');
@@ -65,7 +81,44 @@ async function generateSpeakers() {
     fragment.appendChild(mainDiv);
   });
 
+  // hide 4 speakers if on mobile
+  if (isMobileDevice()) {
+    fragment.childNodes.forEach((child, index) => {
+      if (index > 1) {
+        child.classList.add('hidden');
+      }
+    });
+  }
+
   speakersContainer.appendChild(fragment);
 }
 
 generateSpeakers();
+
+const showButton = document.getElementById('show-speakers-button');
+
+let children;
+showButton.addEventListener('click', () => {
+  if (showButton.dataset.state === 'fresh') {
+    children = Array.from(speakersContainer.children);
+    showButton.dataset.state = 'close';
+  }
+  // show more items
+  if (showButton.dataset.state === 'close') {
+    children.forEach((child) => {
+      child.classList.remove('hidden');
+    });
+    showButton.dataset.state = 'open';
+    showButton.textContent = 'Show Less';
+    showButton.innerHTML += '<i class="fa-solid fa-caret-up"></i>';
+  } else {
+    children.forEach((child, index) => {
+      if (index > 1) {
+        child.classList.add('hidden');
+      }
+    });
+    showButton.dataset.state = 'close';
+    showButton.textContent = 'Show More';
+    showButton.innerHTML += '<i class="fa-solid fa-caret-down"></i>';
+  }
+});

@@ -34,14 +34,14 @@
   }
 
   .is-opened .hamburger_bar-top {
-    @apply rotate-45 translate-y-0;
+    @apply rotate-45 translate-y-0 stroke-white;
   }
 
   .is-opened .hamburger_bar-mid {
-    @apply scale-x-0;
+    @apply scale-x-0 stroke-white;
   }
 
   .is-opened .hamburger_bar-bot {
-    @apply -rotate-45 translate-y-0;
+    @apply -rotate-45 translate-y-0 stroke-white;
   }
 }

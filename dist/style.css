@@ -451,6 +451,12 @@ body{
   left: 0px;
   right: 0px;
 }
+.-left-full{
+  left: -100%;
+}
+.top-0{
+  top: 0px;
+}
 .bottom-0{
   bottom: 0px;
 }
@@ -505,13 +511,13 @@ body{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .mt-2{
   margin-top: 0.5rem;
@@ -527,6 +533,9 @@ body{
 }
 .mb-5{
   margin-bottom: 1.25rem;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 .mt-1{
   margin-top: 0.25rem;
@@ -549,6 +558,9 @@ body{
 .h-8{
   height: 2rem;
 }
+.h-\[400px\]{
+  height: 400px;
+}
 .h-\[600px\]{
   height: 600px;
 }
@@ -568,8 +580,14 @@ body{
 .h-20{
   height: 5rem;
 }
+.h-12{
+  height: 3rem;
+}
 .h-\[2px\]{
   height: 2px;
+}
+.h-\[500px\]{
+  height: 500px;
 }
 .w-full{
   width: 100%;
@@ -607,11 +625,11 @@ body{
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .grid-rows-2{
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -621,9 +639,6 @@ body{
 }
 .flex-col{
   flex-direction: column;
-}
-.place-items-start{
-  place-items: start;
 }
 .place-items-center{
   place-items: center;
@@ -657,11 +672,17 @@ body{
 .self-center{
   align-self: center;
 }
+.rounded-md{
+  border-radius: 0.375rem;
+}
 .rounded-lg{
   border-radius: 0.5rem;
 }
 .border-4{
   border-width: 4px;
+}
+.border-2{
+  border-width: 2px;
 }
 .border-slate-200{
   --tw-border-opacity: 1;
@@ -670,6 +691,10 @@ body{
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-primary-orange{
+  --tw-border-opacity: 1;
+  border-color: rgb(241 78 14 / var(--tw-border-opacity));
 }
 .bg-slate-700{
   --tw-bg-opacity: 1;
@@ -691,6 +716,10 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
 .bg-slate-50\/10{
   background-color: rgb(248 250 252 / 0.1);
 }
@@ -698,14 +727,39 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(83 83 83 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/Assets\/Images\/bg-foggy-birds\.png\'\)\]{
-  background-image: url('/Assets/Images/bg-foggy-birds.png');
-}
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\/Assets\/Images\/bg-foggy-birds\.png\'\)\]{
+  background-image: url('/Assets/Images/bg-foggy-birds.png');
+}
 .bg-\[url\(\'\/Assets\/Images\/pattern1\.png\'\)\]{
   background-image: url('/Assets/Images/pattern1.png');
+}
+.bg-\[url\(\'\/Assets\/Images\/\'\)\]{
+  background-image: url('/Assets/Images/');
+}
+.bg-\[url\(\'\/Assets\/Images\/star-bg\.webp\'\)\]{
+  background-image: url('/Assets/Images/star-bg.webp');
+}
+.bg-\[url\(\'\/Assets\/Images\/micro-carbon\.png\'\)\]{
+  background-image: url('/Assets/Images/micro-carbon.png');
+}
+.bg-\[url\(\'\/Assets\/Images\/nat-black\.webp\'\)\]{
+  background-image: url('/Assets/Images/nat-black.webp');
+}
+.bg-\[url\(\'\/Assets\/Images\/micro\'\)\]{
+  background-image: url('/Assets/Images/micro');
+}
+.from-blue-700{
+  --tw-gradient-from: #1d4ed8;
+  --tw-gradient-to: rgb(29 78 216 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-gray-100{
+  --tw-gradient-from: #f3f4f6;
+  --tw-gradient-to: rgb(243 244 246 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-fuchsia-500{
   --tw-gradient-from: #d946ef;
@@ -722,6 +776,10 @@ body{
   --tw-gradient-to: rgb(236 72 153 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.via-blue-800{
+  --tw-gradient-to: rgb(30 64 175 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #1e40af, var(--tw-gradient-to);
+}
 .via-red-600{
   --tw-gradient-to: rgb(220 38 38 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #dc2626, var(--tw-gradient-to);
@@ -733,6 +791,12 @@ body{
 .via-red-500{
   --tw-gradient-to: rgb(239 68 68 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #ef4444, var(--tw-gradient-to);
+}
+.to-gray-700{
+  --tw-gradient-to: #374151;
+}
+.to-gray-300{
+  --tw-gradient-to: #d1d5db;
 }
 .to-orange-400{
   --tw-gradient-to: #fb923c;
@@ -770,11 +834,17 @@ body{
 .pr-1{
   padding-right: 0.25rem;
 }
+.pl-16{
+  padding-left: 4rem;
+}
 .pt-5{
   padding-top: 1.25rem;
 }
 .pt-2{
   padding-top: 0.5rem;
+}
+.text-left{
+  text-align: left;
 }
 .text-center{
   text-align: center;
@@ -799,6 +869,10 @@ body{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -810,18 +884,6 @@ body{
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
-}
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .font-bold{
   font-weight: 700;
@@ -906,20 +968,33 @@ body{
   --tw-translate-y: 0px;
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  stroke: #fff;
 }
 .is-opened .hamburger_bar-mid{
   --tw-scale-x: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  stroke: #fff;
 }
 .is-opened .hamburger_bar-bot{
   --tw-translate-y: 0px;
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  stroke: #fff;
+}
+
+.hover\:bg-primary-orange:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 78 14 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(241 78 14 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-0:hover{
@@ -935,6 +1010,14 @@ body{
   }
   .sm\:max-w-\[562px\]{
     max-width: 562px;
+  }
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
