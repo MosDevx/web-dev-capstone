@@ -30,7 +30,7 @@ async function getSpeakerList() {
   const response = await fetch(src);
   let speakerList = [];
   if (!response.ok) {
-    // console.error(response.status, response.statusText);
+    console.error(response.status, response.statusText);
   } else {
     const data = await response.json();
     const { speakers } = data;
