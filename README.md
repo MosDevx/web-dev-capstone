@@ -10,6 +10,7 @@
 - Html
 - Css
 - Js
+- ❤️
 
 
 
@@ -63,6 +64,7 @@ Give a ⭐️ if you like this project!
 
 
  Profile Picture Images by [pikisuperstar](https://www.freepik.com/free-vector/hand-drawn-flat-profile-icons-pack_17743913.htm#query=woman%20profile%20illustration&position=19&from_view=search&track=sph) on [Freepik](https://www.freepik.com/free-vector/hand-drawn-flat-profile-icons-pack_17743913.htm#query=woman%20profile%20illustration&position=19&from_view=search&track=sph)
+
 
 ## 📝 License
 
