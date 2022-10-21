@@ -21,20 +21,20 @@
 		<header class="md:grid md:grid-rows-1 md:h-fit ">
 		
 			<!-- div shows only for desktop: has SM links and logout -->
-			<div class="hidden md:grid md:grid-cols-12 bg-slate-700  md:h-8">
-					<div class="flex col-start-9 col-span-3 justify-between w-full items-center  text-white  text-base font-bold">
-						<a href=""><i class="fa-brands fa-facebook  text-lg"></i></a>
-						<a href=""><i class="fa-brands  fa-twitter text-lg"></i></a>
+			<div class="hidden md:grid md:grid-cols-12 bg-slate-700 md:h-8">
+					<div class="flex items-center justify-between w-full col-span-3 col-start-9 text-base font-bold text-white">
+						<a href=""><i class="text-lg fa-brands fa-facebook"></i></a>
+						<a href=""><i class="text-lg fa-brands fa-twitter"></i></a>
 						<a href="">English</a>
 						<a href="">My Page</a>
 						<a href="">Logout</a>
 					</div>
 			</div>
 
-			<nav class="flex p-2 md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center bg-white shadow-md align-middle ">
+			<nav class="flex p-2 align-middle bg-white shadow-md md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center ">
 				
 				
-				<button id="hamburger-button" class="w-8 h-8 z-10 self-start md:hidden" >
+				<button id="hamburger-button" class="z-10 self-start w-8 h-8 md:hidden" >
 					<svg class="w-8 h-8 hamburger">
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-top" />
 						<line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger_bar hamburger_bar-mid" />
@@ -43,29 +43,29 @@
 				</button>
 				
 				<!-- holder logo -->
-				<div class="hidden md:grid md:pb-2 md:col-start-1   md:col-span-3 ">
-						<a href="./homepage.html" class="p-1 relative "><img src="/Assets/Images/main-logo.jpg" width="60" height="56" alt=""/></a>
+				<div class="hidden md:grid md:pb-2 md:col-start-1 md:col-span-3 ">
+						<a href="./homepage.html" class="relative p-1 "><img src="/Assets/Images/main-logo.jpg" width="60" height="56" alt=""/></a>
 				</div>
 
-				<div class="hidden md:flex justify-between col-start-5 w-full text-center col-span-7 pr-1  font-bold">
-							<a href="./about.html" class="hover:text-primary-orange p-1">About</a>
-							<a href=""class="hover:text-primary-orange p-1">Program</a>
-							<a href=""class="hover:text-primary-orange p-1">Join</a>
-							<a href=""class="hover:text-primary-orange p-1">Sponsor</a>
-							<a href=""class="hover:text-primary-orange p-1">News</a>
-							<a href="" class="text-primary-orange ring p-1 ring-primary-orange">CC Campaign</a>
+				<div class="justify-between hidden w-full col-span-7 col-start-5 pr-1 font-bold text-center md:flex">
+							<a href="./about.html" class="p-1 hover:text-primary-orange">About</a>
+							<a href=""class="p-1 hover:text-primary-orange">Program</a>
+							<a href=""class="p-1 hover:text-primary-orange">Join</a>
+							<a href=""class="p-1 hover:text-primary-orange">Sponsor</a>
+							<a href=""class="p-1 hover:text-primary-orange">News</a>
+							<a href="" class="p-1 text-primary-orange ring ring-primary-orange">CC Campaign</a>
 				</div>
 				
 			</nav>
 
 			<nav id="mobile-nav" class="w-full -left-full top-0 pl-16 bg-[url('/Assets/Images/micro-carbon.png')]  flex flex-col justify-evenly text-left  text-3xl font-semibold rounded-md absolute h-[500px] ">
 			
-					<a href="./about.html" class=" p-1 bg-gradient-to-r from-rose-300 to-rose-500 text-transparent bg-clip-text">About</a>
-					<a href=""class=" p-1 bg-gradient-to-b from-orange-500 to-yellow-300 text-transparent bg-clip-text">Program</a>
-					<a href=""class=" p-1 bg-gradient-to-r from-rose-500 via-red-400 to-red-500 text-transparent bg-clip-text">Join</a>
-					<a href=""class=" p-1 bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text">Sponsor</a>
+					<a href="./about.html" class="p-1 text-transparent bg-gradient-to-r from-rose-300 to-rose-500 bg-clip-text">About</a>
+					<a href=""class="p-1 text-transparent bg-gradient-to-b from-orange-500 to-yellow-300 bg-clip-text">Program</a>
+					<a href=""class="p-1 text-transparent bg-gradient-to-r from-rose-500 via-red-400 to-red-500 bg-clip-text">Join</a>
+					<a href=""class="p-1 text-transparent bg-gradient-to-r from-red-500 to-red-800 bg-clip-text">Sponsor</a>
 					<a href=""class=" p-1 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-300 via-fuchsia-600 to-orange-600 text-transparent bg-clip-text">News</a>
-					<!-- <a href="" class="text-primary-orange ring p-1 ring-primary-orange">CC Campaign</a> -->
+					<!-- <a href="" class="p-1 text-primary-orange ring ring-primary-orange">CC Campaign</a> -->
 	
 
 			</nav>
@@ -79,58 +79,58 @@
 		<section class="bg-[url('/Assets/Images/bg-foggy-birds.png')] ">
 		 <section id="intro-section" class="container h-[600px] flex flex-col justify-center p-3 mx-auto mb-5">
 			
-				<p class="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 font-display">Hello All Writers</p>
-				<h1 class="mt-2 text-4xl md:text-5xl bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 bg-clip-text text-transparent uppercase font-display font-bold">  2022 Annual Writers Meetup <h1/>
+				<p class="text-xl font-semibold text-transparent md:text-2xl bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 font-display">Hello All Writers</p>
+				<h1 class="mt-2 text-4xl font-bold text-transparent uppercase md:text-5xl bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 bg-clip-text font-display">  2022 Annual Writers Meetup <h1/>
 				
-					<div class="p-2 my-4 max-w-3xl text-justify border-4 border-white">
-					<p class="  font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cumque officiis. Provident porro, facere quia quibusdam corrupti dolores unde voluptatem minima veniam praesentium sit magni animi ut molestiae repellendus dolorem.</p>
+					<div class="max-w-3xl p-2 my-4 text-justify border-4 border-white">
+					<p class=" font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cumque officiis. Provident porro, facere quia quibusdam corrupti dolores unde voluptatem minima veniam praesentium sit magni animi ut molestiae repellendus dolorem.</p>
 				</div>
 
-				<p class="text-2x font-bold font-display text-primary-black"> 2022.10.15(THUR) ~ 15(FRI)</p>
-				<p class="text-lg  text-primary-black font-body">@ Nation Archives of Kenya</p>
+				<p class="font-bold text-2x font-display text-primary-black"> 2022.10.15(THUR) ~ 15(FRI)</p>
+				<p class="text-lg text-primary-black font-body">@ Nation Archives of Kenya</p>
 			</section> 
 		</section>
 			<!-- End Intro Section -->
 
 			<!-- Start Main Program Section -->
 			<section class=" mx-auto p-3 flex flex-col justify-center bg-[url('/Assets/Images/pattern1.png')] text-white">
-				<div class="flex flex-col my-8  ">
-					<h2 class="text-center font-display font-bold text-2xl capitalize ">Main Program</h2>
-					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg  mt-3"> </div>
+				<div class="flex flex-col my-8 ">
+					<h2 class="text-2xl font-bold text-center capitalize font-display ">Main Program</h2>
+					<div class="flex self-center justify-center w-12 h-1 mt-3 rounded-lg stroke-1 bg-primary-orange"> </div>
 				</div>
 
 				<!-- container for main program list items -->
 				<div class="flex flex-col mx-auto gap-y-4 gap-x-2 sm:max-w-[562px] md:max-w-[780px] lg:max-w-full   md:grid md:grid-cols-3  md:grid-rows-2 lg:flex  lg:flex-row">
 				
 					<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-handshake text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Connect</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Find and link up with new writers across the globe.Make new friends and future bitter rivals</p>	
+						<i class="col-span-1 col-start-1 text-4xl fa-solid fa-handshake"></i>
+						<p class="col-span-2 col-start-2 text-lg font-bold text-center text-primary-orange md:text-xl font-display ">Connect</p>
+						<p class="col-span-4 col-start-4 md:px-4" >Find and link up with new writers across the globe.Make new friends and future bitter rivals</p>	
 						</div>	
 
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-							<i class="fa-solid fa-champagne-glasses text-4xl col-start-1 col-span-1"></i>
-							<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Party Hard</p>
-							<p class="col-start-4 col-span-4 md:px-4" >Get your creative juices flowing by over indulging in your favorite beverages</p>	
+							<i class="col-span-1 col-start-1 text-4xl fa-solid fa-champagne-glasses"></i>
+							<p class="col-span-2 col-start-2 text-lg font-bold text-center text-primary-orange md:text-xl font-display ">Party Hard</p>
+							<p class="col-span-4 col-start-4 md:px-4" >Get your creative juices flowing by over indulging in your favorite beverages</p>	
 							</div>	
 			
 				
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-dumpster-fire text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Trash Talk</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Practice the art of writing believable dialogue by starting belligerent arguments and overly loud fights</p>	
+						<i class="col-span-1 col-start-1 text-4xl fa-solid fa-dumpster-fire"></i>
+						<p class="col-span-2 col-start-2 text-lg font-bold text-center text-primary-orange md:text-xl font-display ">Trash Talk</p>
+						<p class="col-span-4 col-start-4 md:px-4" >Practice the art of writing believable dialogue by starting belligerent arguments and overly loud fights</p>	
 						</div>					
 						
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-							<i class="fa-solid fa-user-secret text-4xl col-start-1 col-span-1"></i>
-							<p class="text-primary-orange font-bold  text-center text-lg md:text-xl font-display col-start-2 col-span-2 ">Learn to Spy</p>
-							<p class="col-start-4 col-span-4 md:px-4" >Discover how to write realistic characters by using juicy details you've gotten from snooping on your loved ones</p>	
+							<i class="col-span-1 col-start-1 text-4xl fa-solid fa-user-secret"></i>
+							<p class="col-span-2 col-start-2 text-lg font-bold text-center text-primary-orange md:text-xl font-display ">Learn to Spy</p>
+							<p class="col-span-4 col-start-4 md:px-4" >Discover how to write realistic characters by using juicy details you've gotten from snooping on your loved ones</p>	
 							</div>	
 							
 						<div class="grid grid-cols-7 place-items-center bg-slate-50/10 md:text-center md:flex md:flex-col md:gap-x-1 md:gap-y-4 md:py-2 md:min-w-[200px] md:max-w-[250px]">
-						<i class="fa-solid fa-fire text-4xl col-start-1 col-span-1"></i>
-						<p class="text-primary-orange font-bold text-lg text-center md:text-xl font-display col-start-2 col-span-2 ">Commit Arson</p>
-						<p class="col-start-4 col-span-4 md:px-4" >Spark the flame of creativity by actually starting fires and torching down public property</p>	
+						<i class="col-span-1 col-start-1 text-4xl fa-solid fa-fire"></i>
+						<p class="col-span-2 col-start-2 text-lg font-bold text-center text-primary-orange md:text-xl font-display ">Commit Arson</p>
+						<p class="col-span-4 col-start-4 md:px-4" >Spark the flame of creativity by actually starting fires and torching down public property</p>	
 						</div>
 						
 				
@@ -138,23 +138,23 @@
 						
 				</div>
 
-				<a href="" class="uppercase underline underline-offset-2 decoration-solid text-center my-8">See the whole program</a>
+				<a href="" class="my-8 text-center underline uppercase underline-offset-2 decoration-solid">See the whole program</a>
 			</section>
 			<!-- End Main Program section -->
 
 			<!-- start section Featured Speaker -->
 			<section class="flex flex-col items-center mb-6 ">
-				<div class="flex flex-col my-8  ">
-					<h2 class="text-center font-display font-bold text-2xl capitalize">Featured Speakers </h2>
-					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg  mt-3 "> </div>
+				<div class="flex flex-col my-8 ">
+					<h2 class="text-2xl font-bold text-center capitalize font-display">Featured Speakers </h2>
+					<div class="flex self-center justify-center w-12 h-1 mt-3 rounded-lg stroke-1 bg-primary-orange "> </div>
 				</div>
 
 				<!-- container for list of speakers -->
 				
-				<div id="speaker-list-display" class=" place-items-center py-4 px-2 lg:px-4 grid gap-y-4 md:grid-cols-2 md:grid-rows-3 md:gap-y-5 mx-auto max-w-6xl ">	
+				<div id="speaker-list-display" class="grid max-w-6xl px-2 py-4 mx-auto place-items-center lg:px-4 gap-y-4 md:grid-cols-2 md:grid-rows-3 md:gap-y-5">	
 				</div>
 				
-				<button id="show-speakers-button" data-state="fresh" class="md:hidden my-4 flex place-items-center text-xl justify-evenly font-display text-center mx-auto  w-2/3 text-primary-orange font-semibold border-2 border-primary-orange hover:bg-primary-orange hover:text-white rounded-md h-12">
+				<button id="show-speakers-button" data-state="fresh" class="flex w-2/3 h-12 mx-auto my-4 text-xl font-semibold text-center border-2 rounded-md md:hidden place-items-center justify-evenly font-display text-primary-orange border-primary-orange hover:bg-primary-orange hover:text-white">
 					Show More  <i class="fa-solid fa-caret-down"></i>
 				</button>
 			</section>
@@ -164,13 +164,13 @@
 			<!-- Start of Partner section -->
 			<section class=" mx-auto bg-[url('/Assets/Images/denim.webp')] py-4">
 				
-				<div class="flex flex-col my-2  ">
-					<h2 class="text-center font-display font-bold text-white text-2xl capitalize">Partners</h2>
-					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg mt-3 "> </div>
+				<div class="flex flex-col my-2 ">
+					<h2 class="text-2xl font-bold text-center text-white capitalize font-display">Partners</h2>
+					<div class="flex self-center justify-center w-12 h-1 mt-3 rounded-lg stroke-1 bg-primary-orange "> </div>
 				</div>
 
 				<!-- List of partners -->
-				<div class="grid grid-cols-3 grid-rows-2 gap-x-2 gap-y-4  place-items-center w-full md:max-w-5xl text-4xl md:text-5xl md:flex md:flex-row md:justify-evenly text-white mx-auto py-4 ">
+				<div class="grid w-full grid-cols-3 grid-rows-2 py-4 mx-auto text-4xl text-white gap-x-2 gap-y-4 place-items-center md:max-w-5xl md:text-5xl md:flex md:flex-row md:justify-evenly ">
 
 					<i class="fa-brands fa-stack-overflow hover:text-primary-orange "></i>
 					<i class="fa-brands fa-medium hover:text-primary-orange "></i>
@@ -183,9 +183,9 @@
 
 
 			<!-- Start of footer section -->
-			<footer class=" w-screen mx-auto h-20 sm:h-24 lg:h-28 text-white mt-1  bg-white ">
-				<div class=" flex flex-row justify-evenly h-full  m-auto items-center sm:max-w-2xl ">
-						<p class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent font-bold font-display text-xl sm:text-2xl md:text-3xl bg-clip-text">ByDesign</p>	
+			<footer class="w-screen h-20 mx-auto mt-1 text-white bg-white sm:h-24 lg:h-28">
+				<div class="flex flex-row items-center h-full m-auto justify-evenly sm:max-w-2xl">
+						<p class="text-xl font-bold text-transparent bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-gray-300 via-fuchsia-600 to-orange-600 font-display sm:text-2xl md:text-3xl bg-clip-text">ByDesign</p>	
 					
 						<p class="font-bold sm:text-lg md:text-xl text-slate-900">2022 ByDesign Software</p>
 				</div>
