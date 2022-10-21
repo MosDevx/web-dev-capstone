@@ -557,6 +557,12 @@ body{
 .col-span-4{
   grid-column: span 4 / span 4;
 }
+.col-span-6{
+  grid-column: span 6 / span 6;
+}
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
 .col-start-9{
   grid-column-start: 9;
 }
@@ -571,6 +577,18 @@ body{
 }
 .col-start-4{
   grid-column-start: 4;
+}
+.col-start-7{
+  grid-column-start: 7;
+}
+.col-start-6{
+  grid-column-start: 6;
+}
+.col-start-3{
+  grid-column-start: 3;
+}
+.col-start-8{
+  grid-column-start: 8;
 }
 .m-3{
   margin: 0.75rem;
@@ -1094,6 +1112,35 @@ body{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(241 78 14 / var(--tw-ring-opacity));
 }
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.delay-75{
+  transition-delay: 75ms;
+}
+.duration-200{
+  transition-duration: 200ms;
+}
+.duration-100{
+  transition-duration: 100ms;
+}
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .hamburger_bar{
   transform-origin: center;
   stroke: #000;
@@ -1190,6 +1237,10 @@ body{
 
 @media (min-width: 640px){
 
+  .sm\:col-start-3{
+    grid-column-start: 3;
+  }
+
   .sm\:h-24{
     height: 6rem;
   }
@@ -1221,6 +1272,10 @@ body{
 
   .md\:col-start-1{
     grid-column-start: 1;
+  }
+
+  .md\:col-start-9{
+    grid-column-start: 9;
   }
 
   .md\:flex{
@@ -1361,6 +1416,22 @@ body{
 }
 
 @media (min-width: 1024px){
+
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-start-9{
+    grid-column-start: 9;
+  }
+
+  .lg\:col-start-8{
+    grid-column-start: 8;
+  }
 
   .lg\:flex{
     display: flex;
