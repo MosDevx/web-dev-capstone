@@ -1,10 +1,13 @@
 /* stylelint-disable scss/at-rule-no-unknown */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
 /* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
+
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+
 *,
 ::before,
 ::after {
@@ -13,16 +16,19 @@
   border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
 }
+
 ::before,
 ::after {
   --tw-content: '';
 }
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
+
 html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -31,34 +37,42 @@ html {
      tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
 }
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
+
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
+
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
 }
+
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
+
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
+
 /*
 Remove the default font size and weight for headings.
 */
+
 h1,
 h2,
 h3,
@@ -68,24 +82,30 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
+
 a {
   color: inherit;
   text-decoration: inherit;
 }
+
 /*
 Add the correct font weight in Edge and Safari.
 */
+
 b,
 strong {
   font-weight: bolder;
 }
+
 /*
 1. Use the user's configured `mono` font family by default.
 2. Correct the odd `em` font sizing in all browsers.
 */
+
 code,
 kbd,
 samp,
@@ -93,15 +113,19 @@ pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+
 /*
 Add the correct font size in all browsers.
 */
+
 small {
   font-size: 80%;
 }
+
 /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
+
 sub,
 sup {
   font-size: 75%;
@@ -109,27 +133,33 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -0.25em;
 }
+
 sup {
   top: -0.5em;
 }
+
 /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
 */
+
 table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
 }
+
 /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
+
 button,
 input,
 optgroup,
@@ -143,17 +173,21 @@ textarea {
   margin: 0; /* 2 */
   padding: 0; /* 3 */
 }
+
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
+
 button,
 select {
   text-transform: none;
 }
+
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
+
 button,
 [type='button'],
 [type='reset'],
@@ -162,62 +196,80 @@ button,
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
 }
+
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
+
 :-moz-focusring {
   outline: auto;
 }
+
 /*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
+
 :-moz-ui-invalid {
   box-shadow: none;
 }
+
 /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
+
 progress {
   vertical-align: baseline;
 }
+
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
+
 /*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
 [type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
+
 /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
 */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
 /*
 Add the correct display in Chrome and Safari.
 */
+
 summary {
   display: list-item;
 }
+
 /*
 Removes the default spacing and border for appropriate elements.
 */
+
 blockquote,
 dl,
 dd,
@@ -233,13 +285,16 @@ p,
 pre {
   margin: 0;
 }
+
 fieldset {
   margin: 0;
   padding: 0;
 }
+
 legend {
   padding: 0;
 }
+
 ol,
 ul,
 menu {
@@ -247,43 +302,54 @@ menu {
   margin: 0;
   padding: 0;
 }
+
 /*
 Prevent resizing textareas horizontally by default.
 */
+
 textarea {
   resize: vertical;
 }
+
 /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
+
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
+
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
+
 /*
 Set the default cursor for buttons.
 */
+
 button,
 [role="button"] {
   cursor: pointer;
 }
+
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
+
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
+
 img,
 svg,
 video,
@@ -295,29 +361,36 @@ object {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
 }
+
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
+
 img,
 video {
   max-width: 100%;
   height: auto;
 }
+
 html {
     font-family: lato, system-ui, sans-serif;
   }
+
 body{
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(39 42 49 / var(--tw-text-opacity));
 }
+
 @media (min-width: 768px){
+
   body{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -364,6 +437,7 @@ body{
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
 ::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -414,26 +488,31 @@ body{
   width: 100%;
 }
 @media (min-width: 640px){
+
   .container{
     max-width: 640px;
   }
 }
 @media (min-width: 768px){
+
   .container{
     max-width: 768px;
   }
 }
 @media (min-width: 1024px){
+
   .container{
     max-width: 1024px;
   }
 }
 @media (min-width: 1280px){
+
   .container{
     max-width: 1280px;
   }
 }
 @media (min-width: 1536px){
+
   .container{
     max-width: 1536px;
   }
@@ -558,8 +637,8 @@ body{
 .h-8{
   height: 2rem;
 }
-.h-\[400px\]{
-  height: 400px;
+.h-\[500px\]{
+  height: 500px;
 }
 .h-\[600px\]{
   height: 600px;
@@ -585,9 +664,6 @@ body{
 }
 .h-\[2px\]{
   height: 2px;
-}
-.h-\[500px\]{
-  height: 500px;
 }
 .w-full{
   width: 100%;
@@ -716,10 +792,6 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
-.bg-blue-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
 .bg-slate-50\/10{
   background-color: rgb(248 250 252 / 0.1);
 }
@@ -727,8 +799,17 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(83 83 83 / var(--tw-bg-opacity));
 }
+.bg-\[url\(\'\/Assets\/Images\/micro-carbon\.png\'\)\]{
+  background-image: url('/Assets/Images/micro-carbon.png');
+}
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.bg-\[radial-gradient\(ellipse_at_top\2c _var\(--tw-gradient-stops\)\)\]{
+  background-image: radial-gradient(ellipse at top, var(--tw-gradient-stops));
 }
 .bg-\[url\(\'\/Assets\/Images\/bg-foggy-birds\.png\'\)\]{
   background-image: url('/Assets/Images/bg-foggy-birds.png');
@@ -736,29 +817,29 @@ body{
 .bg-\[url\(\'\/Assets\/Images\/pattern1\.png\'\)\]{
   background-image: url('/Assets/Images/pattern1.png');
 }
-.bg-\[url\(\'\/Assets\/Images\/\'\)\]{
-  background-image: url('/Assets/Images/');
-}
-.bg-\[url\(\'\/Assets\/Images\/star-bg\.webp\'\)\]{
-  background-image: url('/Assets/Images/star-bg.webp');
-}
-.bg-\[url\(\'\/Assets\/Images\/micro-carbon\.png\'\)\]{
-  background-image: url('/Assets/Images/micro-carbon.png');
-}
-.bg-\[url\(\'\/Assets\/Images\/nat-black\.webp\'\)\]{
-  background-image: url('/Assets/Images/nat-black.webp');
-}
-.bg-\[url\(\'\/Assets\/Images\/micro\'\)\]{
-  background-image: url('/Assets/Images/micro');
-}
-.from-blue-700{
-  --tw-gradient-from: #1d4ed8;
-  --tw-gradient-to: rgb(29 78 216 / 0);
+.from-rose-300{
+  --tw-gradient-from: #fda4af;
+  --tw-gradient-to: rgb(253 164 175 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.from-gray-100{
-  --tw-gradient-from: #f3f4f6;
-  --tw-gradient-to: rgb(243 244 246 / 0);
+.from-orange-500{
+  --tw-gradient-from: #f97316;
+  --tw-gradient-to: rgb(249 115 22 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-rose-500{
+  --tw-gradient-from: #f43f5e;
+  --tw-gradient-to: rgb(244 63 94 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-red-500{
+  --tw-gradient-from: #ef4444;
+  --tw-gradient-to: rgb(239 68 68 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-gray-300{
+  --tw-gradient-from: #d1d5db;
+  --tw-gradient-to: rgb(209 213 219 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-fuchsia-500{
@@ -776,9 +857,13 @@ body{
   --tw-gradient-to: rgb(236 72 153 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.via-blue-800{
-  --tw-gradient-to: rgb(30 64 175 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #1e40af, var(--tw-gradient-to);
+.via-red-400{
+  --tw-gradient-to: rgb(248 113 113 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #f87171, var(--tw-gradient-to);
+}
+.via-fuchsia-600{
+  --tw-gradient-to: rgb(192 38 211 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #c026d3, var(--tw-gradient-to);
 }
 .via-red-600{
   --tw-gradient-to: rgb(220 38 38 / 0);
@@ -792,11 +877,20 @@ body{
   --tw-gradient-to: rgb(239 68 68 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #ef4444, var(--tw-gradient-to);
 }
-.to-gray-700{
-  --tw-gradient-to: #374151;
+.to-rose-500{
+  --tw-gradient-to: #f43f5e;
 }
-.to-gray-300{
-  --tw-gradient-to: #d1d5db;
+.to-yellow-300{
+  --tw-gradient-to: #fde047;
+}
+.to-red-500{
+  --tw-gradient-to: #ef4444;
+}
+.to-red-800{
+  --tw-gradient-to: #991b1b;
+}
+.to-orange-600{
+  --tw-gradient-to: #ea580c;
 }
 .to-orange-400{
   --tw-gradient-to: #fb923c;
@@ -981,172 +1075,209 @@ body{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   stroke: #fff;
 }
-
 .hover\:bg-primary-orange:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(241 78 14 / var(--tw-bg-opacity));
 }
-
 .hover\:text-primary-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(241 78 14 / var(--tw-text-opacity));
 }
-
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 .hover\:opacity-0:hover{
   opacity: 0;
 }
-
 @media (min-width: 640px){
+
   .sm\:h-24{
     height: 6rem;
   }
+
   .sm\:max-w-2xl{
     max-width: 42rem;
   }
+
   .sm\:max-w-\[562px\]{
     max-width: 562px;
   }
+
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 768px){
+
   .md\:col-span-3{
     grid-column: span 3 / span 3;
   }
+
   .md\:col-start-1{
     grid-column-start: 1;
   }
+
   .md\:flex{
     display: flex;
   }
+
   .md\:grid{
     display: grid;
   }
+
   .md\:hidden{
     display: none;
   }
+
   .md\:h-fit{
     height: -moz-fit-content;
     height: fit-content;
   }
+
   .md\:h-8{
     height: 2rem;
   }
+
   .md\:w-\[1000px\]{
     width: 1000px;
   }
+
   .md\:w-\[460px\]{
     width: 460px;
   }
+
   .md\:min-w-\[200px\]{
     min-width: 200px;
   }
+
   .md\:max-w-\[780px\]{
     max-width: 780px;
   }
+
   .md\:max-w-\[250px\]{
     max-width: 250px;
   }
+
   .md\:max-w-5xl{
     max-width: 64rem;
   }
+
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .md\:grid-rows-1{
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
+
   .md\:grid-rows-2{
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
+
   .md\:grid-rows-3{
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
+
   .md\:flex-row{
     flex-direction: row;
   }
+
   .md\:flex-col{
     flex-direction: column;
   }
+
   .md\:justify-evenly{
     justify-content: space-evenly;
   }
+
   .md\:gap-x-1{
     -moz-column-gap: 0.25rem;
          column-gap: 0.25rem;
   }
+
   .md\:gap-y-4{
     row-gap: 1rem;
   }
+
   .md\:gap-y-5{
     row-gap: 1.25rem;
   }
+
   .md\:p-0{
     padding: 0px;
   }
+
   .md\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
   .md\:pb-2{
     padding-bottom: 0.5rem;
   }
+
   .md\:text-center{
     text-align: center;
   }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
   }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 1024px){
+
   .lg\:flex{
     display: flex;
   }
+
   .lg\:h-28{
     height: 7rem;
   }
+
   .lg\:max-w-full{
     max-width: 100%;
   }
+
   .lg\:flex-row{
     flex-direction: row;
   }
+
   .lg\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
