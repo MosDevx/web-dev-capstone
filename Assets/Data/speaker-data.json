@@ -1,0 +1,53 @@
+{
+
+	"speakers":[
+		{
+			"imgUrl":"../Assets/Images/p-pic-1.png",
+			"imgAlt":"Speaker One",
+			"name": " Sweet Tea Fewhairs ",
+			"position": "Author , Occasional Super Villain",
+			"writeup":"Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters."
+
+		},
+		{
+			"imgUrl":"../Assets/Images/p-pic-2.png",
+			"imgAlt":"Speaker Two",
+			"name": " Greasy Jan Overturf",
+			"position": "Novelist , Local Cloud Watcher",
+			"writeup":"I hope so. Perfect, just perfect. Without any sugar. No, Marty, we've already agreed that having information about the future could be extremely dangerous. Even if your intentions are good, they could backfire drastically."
+
+		},
+		{
+			"imgUrl":"../Assets/Images/p-pic-3.png",
+			"imgAlt":"Speaker Three",
+			"name": "Mergatroid Goodpasture",
+			"position": "Publisher , Avid Cat Collector  ",
+			"writeup":"I'm baby cloud bread biodiesel bodega boys PBR&B gentrify yuccie, pabst you probably haven't heard of them before they sold out cronut keffiyeh fanny pack. Literally sustainable tousled dreamcatcher celiac godard intelligentsia gluten-free etsy coloring book shabby chic actually 3 wolf moon Brooklyn."
+
+		},
+		{
+			"imgUrl":"../Assets/Images/p-pic-4.png",
+			"imgAlt":"Speaker Four",
+			"name": "  Cap'n Ted Mauvebeard ",
+			"position": "Author , Wanted (internet) Pirate",
+			"writeup":"Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits."
+
+		},
+		{
+			"imgUrl":"../Assets/Images/p-pic-5.png",
+			"imgAlt":"Speaker Five",
+			"name": "  Squids Hootkins ",
+			"position": "Author , Overall Nice Person",
+			"writeup":"Pastry bear claw tootsie roll apple pie icing bonbon. Chupa chups cookie faworki jujubes tootsie roll jujubes cotton candy liquorice. Donut cotton candy faworki topping marshmallow topping"
+
+		},
+		{
+			"imgUrl":"../Assets/Images/p-pic-6.png",
+			"imgAlt":"Speaker Six",
+			"name": " Cinnabuns Porkins",
+			"position": "Novelist , Monthly Werewolf",
+			"writeup":"Lorizzle ipsizzle dolor sit amet, shiznit the bizzle sizzle. sapizzle velizzle, shizznit volutpizzle, da bomb pimpin’, fizzle vizzle, arcu. Ass eget tortizzle. Gizzle eros. Boom shackalack izzle dolor dapibizzle turpis tempizzle fo shizzle mah nizzle fo rizzle,"
+
+		}
+	]
+}

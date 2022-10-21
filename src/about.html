@@ -18,7 +18,7 @@
 	<body class="">
  
 		<!-- Start Header section -->
-		 <header class="md:grid md:grid-rows-2 md:h-fit ">
+		<header class="md:grid md:grid-rows-1 md:h-fit ">
 		
 			<!-- div shows only for desktop: has SM links and logout -->
 			<div class="hidden md:grid md:grid-cols-12 bg-slate-700  md:h-8">
@@ -31,7 +31,7 @@
 					</div>
 			</div>
 
-			<nav class="flex p-2 md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center align-middle ">
+			<nav class="flex p-2 md:p-0 md:pb-2 md:grid md:grid-cols-12 place-items-center bg-white shadow-md align-middle ">
 				
 				
 				<button id="hamburger-button" class="w-8 h-8 self-start md:hidden" >
@@ -43,8 +43,8 @@
 				</button>
 				
 				<!-- holder logo -->
-				<div class="hidden md:grid md:pb-2 md:col-start-1 md:col-span-3 ">
-						<a href="" class="p-1">Logo Goes Here</a>
+				<div class="hidden md:grid md:pb-2 md:col-start-1   md:col-span-3 ">
+						<a href="./homepage.html" class="p-1 relative "><img src="/Assets/Images/main-logo.jpg" width="60" height="56" alt=""/></a>
 				</div>
 
 				<div class="hidden md:flex justify-between col-start-5 w-full text-center col-span-7 pr-1  font-bold">
@@ -57,14 +57,17 @@
 				</div>
 				
 			</nav>
-		</header> 
+		</header>  
 		<!-- End header section -->
 
 		<!-- Start Intro section -->
-		 <section id="intro-section" class="container h-[600px]  flex flex-col justify-center p-3 mx-auto mb-5 text-center">
+		<div class="bg-[url('/Assets/Images/bg-foggy-birds.png')] ">
+
+		
+		 <section id="intro-section" class="container h-[600px]  flex flex-col justify-center p-3 mx-auto  text-center">
 			
-				<p class=" text-xl font-semibold text-primary-orange font-display">Hello All Creatives</p>
-				<h1 class="mt-2 text-4xl md:text-5xl text-primary-orange uppercase font-display font-bold"> 2022 Annual Writers Meetup </h1>
+				<p class=" text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 font-display">Hello All Creatives</p>
+				<h1 class="mt-2 text-4xl md:text-5xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent uppercase font-display font-bold"> 2022 Annual Writers Meetup </h1>
 				
 					<div class="p-1 my-4 text-justify max-w-[800px] mx-auto border-4 border-slate-200 bg-slate-50">
 					<p class=" mx-auto  font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cumque officiis. Provident porro, facere quia quibusdam corrupti dolores unde voluptatem minima veniam praesentium sit magni animi ut molestiae repellendus dolorem.</p>
@@ -74,10 +77,11 @@
 					<a  class="underline underline-offset-2  font-semibold" href="mailto:xyz@abc.com">writersMeetup@gmail.com</a>
 				
 			</section> 
+		</div>
 			<!-- End Intro Section -->
 
 			<!-- Logo Details section -->
-			<section class="container mx-auto bg-white h-[450px] text-center flex flex-col">
+			<section class=" mx-auto bg-white h-[450px] text-center flex pt-5 flex-col">
 					<h2 class="font-semibold text-2xl md:text-3xl capitalize">Writers Meetup <br/> 2022 Logo</h2>
 					<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg mt-3"> </div>
 					<p class="font-body m-3  ">The logo for the 2022 writers conference was decided by through the logo competition held from 8.June to 7.July  </p>
@@ -90,7 +94,7 @@
 			<!-- End logo details section -->
 
 			<!-- Start past events section -->
-			<section class="container mx-auto bg-white h-fit text-center pt-2 mb-10 flex flex-col">
+			<section class=" mx-auto bg-white h-fit text-center pt-2 mb-10 flex flex-col">
 				<h2 class="font-semibold text-2xl md:text-3xl capitalize ">See the past Writers Meetup</h2>
 				<div class="bg-primary-orange w-12 flex justify-center self-center h-1 stroke-1 rounded-lg mt-3"> </div>
 				<p class="font-body m-3  ">Take a look at the last two Writers Meetups that  took place in Accra and Cairo.</p>
