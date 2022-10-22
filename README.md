@@ -2,7 +2,7 @@
 
 # Web Dev Fundamental Capstone Project
 
-> Capstone Project for Module 1 of Microverse
+> Website Development Project Meant To Showcase Learning Progress After a Month of Study at Microverse.
 
 ## Built With
 

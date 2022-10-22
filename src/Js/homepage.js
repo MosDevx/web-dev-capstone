@@ -122,3 +122,26 @@ showButton.addEventListener('click', () => {
     showButton.innerHTML += '<i class="fa-solid fa-caret-down"></i>';
   }
 });
+
+// Hide / Display speakers in case of window resize
+const firstResize = true;
+window.addEventListener('resize', () => {
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  let children;
+  if (firstResize) {
+    children = Array.from(speakersContainer.children);
+  }
+  if (vw >= 768) {
+    children.forEach((child) => {
+      child.classList.remove('hidden');
+    });
+
+    showButton.dataset.state = 'fresh';
+  } else {
+    children.forEach((child, index) => {
+      if (index > 1) {
+        child.classList.add('hidden');
+      }
+    });
+  }
+});
