@@ -1,3 +1,48 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: lato, system-ui, sans-serif;
+  }
+
+  body {
+    @apply text-primary-black bg-primary-light-grey md:text-lg;
+  }
+}
+
+@layer components {
+  .hamburger {
+    /* @apply w-6 h-6; */
+  }
+}
+
+@layer utilities {
+  .hamburger_bar {
+    @apply transition-transform duration-300 origin-center stroke-black stroke-[4px];
+  }
+
+  .hamburger_bar-top {
+    @apply -translate-y-[40%];
+  }
+
+  .hamburger_bar-bot {
+    @apply translate-y-[40%];
+  }
+
+  .is-opened .hamburger_bar-top {
+    @apply rotate-45 translate-y-0 stroke-white;
+  }
+
+  .is-opened .hamburger_bar-mid {
+    @apply scale-x-0 stroke-white;
+  }
+
+  .is-opened .hamburger_bar-bot {
+    @apply -rotate-45 translate-y-0 stroke-white;
+  }
+}
