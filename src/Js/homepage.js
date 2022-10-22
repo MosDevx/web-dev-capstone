@@ -145,5 +145,7 @@ window.addEventListener('resize', () => {
       }
     });
     showButton.classList.remove('hidden');
+    showButton.textContent = 'Show More';
+    showButton.innerHTML += '<i class="fa-solid fa-caret-down"></i>';
   }
 });
