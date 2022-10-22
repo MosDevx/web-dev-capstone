@@ -137,11 +137,13 @@ window.addEventListener('resize', () => {
     });
 
     showButton.dataset.state = 'fresh';
+    showButton.classList.add('hidden');
   } else {
     children.forEach((child, index) => {
       if (index > 1) {
         child.classList.add('hidden');
       }
     });
+    showButton.classList.remove('hidden')
   }
 });
