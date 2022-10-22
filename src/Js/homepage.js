@@ -144,6 +144,6 @@ window.addEventListener('resize', () => {
         child.classList.add('hidden');
       }
     });
-    showButton.classList.remove('hidden')
+    showButton.classList.remove('hidden');
   }
 });
