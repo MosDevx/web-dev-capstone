@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
  [Live Demo Link](https://mosdevx.github.io/web-dev-capstone/)
 
- You can view the website showcase [here](https://www.loom.com/share/3258e4f31d184a0e9fd61ccf5cdc9686)
+ You can view the website showcase [here](https://www.loom.com/share/6e20418269d545ebac988ff46ae1cb7b)
 
 ## Authors
 
