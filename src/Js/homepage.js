@@ -99,7 +99,6 @@ const showButton = document.getElementById('show-speakers-button');
 
 let children;
 
-
 showButton.addEventListener('click', () => {
   if (showButton.dataset.state === 'fresh') {
     children = Array.from(speakersContainer.children);
